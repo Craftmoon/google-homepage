@@ -1,25 +1,28 @@
-/* Strip the ul of padding and list styling */
-ul {
-    list-style-type: none;
-    margin: 0;
+
+*{
     padding: 0;
-    position: static;
-    float: right;
-    height: 40px;
-    width: 321px;
+}
+
+ul {
+    list-style-type: none;  /* Strip the ul of padding and list styling */
+    margin: 0;              /* Take out the defined margin that comes with the browser I think (web kit probably) */
+    position: static;       /* Making the "ul div" static in a place */
+    float: right;           /* Make it float to the right where its supposed to be */
+    height: 40px;           /* Defining a heigh for it just to give it borders I guess*/ 
+    width: 321px;           /* Defining the width of the "ul div" to limit how long will the nav bar be */ 
 }
 
 li {
-    display: inline-block;
-    margin-left: 1px;
+    position: relative;     /* This is so it'll be possible to move the li elements inside the ul*/ 
+    display: inline-block;  /* Without this the nav bar is a vertical, this is to make it horizontal*/
 }
 
 li a {
-    display: block;
-    min-width: 60px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
+    position: relative;     /* This is so it'll be possible to move the li a elements inside the ul*/ 
+    display: block;         /* li a elements are displayed as blocks and not lines (as in inline)*/ 
+    min-width: 60px;        /* minimum width to separate the elements*/ 
+    text-align: center;     /* Align the li a elements horizontally in the anchor*/
+    line-height: 50px;      
     text-decoration: none;
 }
 

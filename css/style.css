@@ -1,32 +1,53 @@
 
-*{
-    padding: 0;
-}
-
 ul {
-    list-style-type: none;  /* Strip the ul of padding and list styling */
-    margin: 0;              /* Take out the defined margin that comes with the browser I think (web kit probably) */
+    list-style-type: none;  /* Strip the ul of the list styling */
     position: static;       /* Making the "ul div" static in a place */
     float: right;           /* Make it float to the right where its supposed to be */
-    height: 40px;           /* Defining a heigh for it just to give it borders I guess*/ 
-    width: 321px;           /* Defining the width of the "ul div" to limit how long will the nav bar be */ 
+    height: 50px;           /* Defining a heigh for it just to give it borders I guess*/ 
+    width: 245px;           /* Defining the width of the "ul div" to limit how long will the nav bar be */ 
+    margin: 0;
+    padding: 0;
 }
 
 li {
     position: relative;     /* This is so it'll be possible to move the li elements inside the ul*/ 
     display: inline-block;  /* Without this the nav bar is a vertical, this is to make it horizontal*/
+    vertical-align: middle;
+    padding: 6px;
 }
 
 li a {
     position: relative;     /* This is so it'll be possible to move the li a elements inside the ul*/ 
     display: block;         /* li a elements are displayed as blocks and not lines (as in inline)*/ 
-    min-width: 60px;        /* minimum width to separate the elements*/ 
     text-align: center;     /* Align the li a elements horizontally in the anchor*/
-    line-height: 50px;      
-    text-decoration: none;
+  /*  min-width: 43px;        /* minimum width to separate the elements*/ 
+    /*line-height: 50px;      /* Defines a pattern to the heigh of the anchors */
+    text-decoration: none;  /* Takes out the text decoration (like the underline from being a link) */
+    color: #404040;         
+    font-size: small;
+    font-family: Tahoma, sans-serif;
+}
+
+a:hover{    
+    color:#585858;              /* hovering it changes it to a lighter gray */
+    text-decoration: underline /* by hovering it, it gets the underline effect of a link */
+}
+
+.icon {
+    vertical-align: middle;  /* Alinha verticalmente no meio do li a*/
+    opacity: .6;             /* Lower the opacity, making the icon looks gray */
+}
+
+.icon:hover{
+    opacity: 1;              /* By hovering it, it makes the opacity go back to 1 and makes it look black again */ 
 }
 
 .avatar-img {
-    border-radius: 50%;
+    border-radius: 50%;     /* Makes the avatar image (square) be a circle. */ 
+    opacity: 1;             /* Garantindo que o efeito de hover dos dois icons (app e notifications)*/
 }
 
+#avatar-link {
+    display: block;
+    border-radius: 16px;
+}

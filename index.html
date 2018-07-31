@@ -7,42 +7,64 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 </head>
 <body>
-    <ul>
-        <li>
-            <a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Gmail</a>
-        </li>
-        <li>
-            <a href="https://www.google.com.br/imghp?hl=en&tab=wi">Images</a>
-        </li>
-        <li>
-            <a href="https://www.google.com.br/intl/en/about/products/">
-                <img src="images/apps-icon.png" alt="Application icon" class = "icon">
-            </a>
-        </li>
-        <li>
-            <a href="nothing yet">
-                <img src="images/notification-icon.png" alt="Notification icon" class = "icon">
-            </a>
-        </li>
-        <li>
-            <a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/%3Fauthuser%3D0" class = "avatar-link">
-                <img src="images/avatar-image.png" alt="Avatar image" class ="icon avatar-img">
-            </a>
-        </li>
-    </ul>
-    <br>
-    <img src="images/google-logo.png" alt="Google logo">
-    <form method="GET">
-        <input type="text">
-        <br>
-        <input type="submit" name="google-search" value="Google Search">
-        <input type="submit" name="feeling-lucky" value="I'm Feeling Lucky">
-    </form>
-    <a href="https://adwords.google.com/intl/en_br/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Avertising</a>
-    <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a>
-    <a href="https://www.google.com/intl/en_br/about/?utm_source=google.com&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
-    <a href="https://policies.google.com/privacy?hl=en&gl=br">Privacy</a>
-    <a href="https://policies.google.com/terms?hl=en&gl=br">Terms</a>
-    <a href="https://www.google.com/preferences?hl=en">Settings</a>
+
+    <!-- Navbar start-->
+    <div class="navbar-ul">
+        <ul>
+            <li>
+                <a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Gmail</a>
+            </li>
+            <li>
+                <a href="https://www.google.com.br/imghp?hl=en&tab=wi">Images</a>
+            </li>
+            <li>
+                <a href="https://www.google.com.br/intl/en/about/products/">
+                    <img src="images/apps-icon.png" alt="Application icon" class = "icon">
+                </a>
+            </li>
+            <li>
+                <a href="nothing yet">
+                    <img src="images/notification-icon.png" alt="Notification icon" class = "icon">
+                </a>
+            </li>
+            <li>
+                <a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/%3Fauthuser%3D0" class = "avatar-link">
+                    <img src="images/avatar-image.png" alt="Avatar image" class ="icon avatar-img">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End navbar-->
+
+    <!-- Middle part of Google logo and buttons start-->
+    <div class="flex-container">
+        <div class = "middle-search">
+            <img src="images/google-logo.png" alt="Google logo">
+            <form method="GET" class="search-bar">
+                <input type="text" placeholder="OdinProject..">
+                <br>
+                <div class = "btn-group">
+                    <input type="submit" name="google-search" value="Google Search">
+                    <input type="submit" name="feeling-lucky" value="I'm Feeling Lucky">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Middle part end-->
+
+    <!-- Footer start-->
+    <div class="footer">
+        <div class="footer-left">
+            <a href="https://adwords.google.com/intl/en_br/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+            <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a>
+            <a href="https://www.google.com/intl/en_br/about/?utm_source=google.com&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+        </div>
+        <div class="footer-right">
+            <a href="https://policies.google.com/privacy?hl=en&gl=br">Privacy</a>
+            <a href="https://policies.google.com/terms?hl=en&gl=br">Terms</a>
+            <a href="https://www.google.com/preferences?hl=en">Settings</a>
+        </div>
+    </div>
+    <!-- Footer end -->
 </body>
 </html>

@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------ Top navbar ------------------ */
+.navbar-ul {
+    display: inline-block;
+    width: 100%;
+}
 
 ul {
     list-style-type: none;  /* Strip the ul of the list styling */
@@ -5,8 +15,7 @@ ul {
     float: right;           /* Make it float to the right where its supposed to be */
     height: 50px;           /* Defining a heigh for it just to give it borders I guess*/ 
     width: 245px;           /* Defining the width of the "ul div" to limit how long will the nav bar be */ 
-    margin: 0;
-    padding: 0;
+    padding-top: 10px;
 }
 
 li {
@@ -25,9 +34,9 @@ li a {
     font-family: Tahoma, sans-serif;
 }
 
-a:hover{    
+a:hover {    
     color:#585858;              /* hovering it changes it to a lighter gray */
-    text-decoration: underline /* by hovering it, it gets the underline effect of a link */
+    text-decoration: underline    /* by hovering it, it gets the underline effect of a link */
 }
 
 .icon {
@@ -46,4 +55,102 @@ a:hover{
 
 .avatar-link {
     border-radius: 16px;    /* Getting the link to be a circle as the avatar image */
+}
+
+/* ------------------ Middle area  ------------------ */
+
+html {
+    min-height: 100%;
+}
+
+html body {
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.middle-search {
+    text-align: center;
+}
+
+.middle-search img {
+    display: block;
+    margin:auto;
+    padding-bottom: 20px;
+}
+
+.search-bar input[type=text] {
+    width: 550px;
+    padding: 10px;    
+}
+
+.search-bar input[type=submit] {
+    padding: 10px 20px 10px 20px;
+    color: #686868;
+    font-weight: bold;
+}
+
+.btn-group {
+    padding-top: 30px;
+}
+
+/* ------------------ Fotter ------------------ */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #F0F0F0;
+    text-align: center;
+    border-top-color: #E8E8E8;
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding-bottom: 13px;
+    padding-top: 13px;
+}
+
+.footer a {
+    color: #696969;
+    font-size: small;
+    font-family: Tahoma, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.footer a:link {
+    text-decoration: none;
+}
+
+.footer a:visited {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer a:active {
+    text-decoration: underline;
+}
+
+.footer-right{
+    float: right;
+    padding-right: 20px;
+}
+
+.footer-left{
+    float: left;
+    padding-left: 20px;
 }

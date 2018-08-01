@@ -7,6 +7,7 @@
 .navbar-ul {
     display: inline-block;
     width: 100%;
+    z-index: 1;
 }
 
 ul {
@@ -92,13 +93,50 @@ html body {
 
 .search-bar input[type=text] {
     width: 550px;
-    padding: 10px;    
+    padding: 15px;
+    border: 0px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
 }
 
 .search-bar input[type=submit] {
-    padding: 10px 20px 10px 20px;
+    padding: 12px 22px 12px 22px;
     color: #686868;
     font-weight: bold;
+    border: 0px solid;
+    background-color: #F0F0F0;
+}
+
+.search-bar input[type=submit]:first-child {
+    margin-right: 5px;
+}
+
+.search-bar input[type=submit]:link {
+    text-decoration: none;
+}
+
+.search-bar input[type=submit]:active {
+    text-decoration: none;
+}
+
+.search-bar input[type=submit]:hover {
+    color: black;
+    margin: -1px;
+    border-color: #D0D0D0;
+    border-width: 1px;
+    border-radius: 3px;
+}
+
+.search-bar input[type=submit]:hover:first-child {
+    color: black;
+    margin-right: 4px;
+    border-color: #D0D0D0;
+    border-width: 1px;
+    border-radius: 3px;
+}
+
+
+.search-bar input[type=submit]:visited {
+    text-decoration: none;
 }
 
 .btn-group {
